@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
+.addrep {
+  display: none;
+  flex-direction: column;
+  gap: 1vh;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background: black;
+  width: 40vw;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px -1px #fe5f55;
+  z-index: 5;
+}
+#addrep {
+  display: none;
+  flex-direction: column;
+  gap: 1vh;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background-color: black !important;
+  width: 40vw;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px -1px #fe5f55;
+  z-index: 5;
+}
+.addrep .options h3 {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.addrep input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.addrep input[type='submit'] {
+  background: #fe5f55;
+  cursor: pointer;
+}
+.addrep .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addrep .options img {
+  cursor: pointer;
+}
+.confirmer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 40vw;
+  padding: 20px 15px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  #ajt {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .addrep {
+    width: 60vw;
+    height: 70vh;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>Facture</title>
+    <link rel="icon" type="image/x-icon" href="./assets/wrench.png" />
+    <link rel="stylesheet" href="./style/pdfStyle1.css" />
+  </head>
+  <body>
+    <script src="./script/pdfgen.js"></script>
+    <div class="nav">
+      <a href="shop.php">
+        <img src="./assets/arrow-left.svg" alt="" /> Retour a shop
+      </a>
+      <button onclick="genpdf()">telecharger facture</button>
+    </div>
+    <div id="pdf">
+      <header>
+        <img src="./assets/ganglogo.png" alt="" />
+        <h2>
+          Gangsta reparation <br />
+          scooter & moto<br />
+          <span>adress</span>
+        </h2>
+      </header>
+      <main>
+        <section class="client">
+          <ul>
+            <li>Nom & Prenom : <span id="nom"></span></li>
+            <li>telephone : <span id="tel"></span></li>
+            <li>num serie : <span id="serie"></span></li>
+          </ul>
+        </section>
+        <section class="date-and-billnum">
+          <h2>Num de facture : <span id="billNum"></span></h2>
+          <h2>date de reparation : <span id="date"></span></h2>
+        </section>
+
+        <table>
+          <tr>
+            <th>modele</th>
+            <th>deignation</th>
+            <th>prix</th>
+            <th>main d'oeuvre</th>
+          </tr>
+          <tr>
+            <td id="modele"></td>
+            <td id="designation"></td>
+            <td id="prix"></td>
+            <td id="main"></td>
+          </tr>
+        </table>
+        <section class="table-and-signature">
+          <table>
+            <tr>
+              <th>brute</th>
+              <th>remise</th>
+              <th>totale</th>
+            </tr>
+            <tr>
+              <td id="brute"></td>
+              <td id="remise"></td>
+              <td id="totale"></td>
+            </tr>
+          </table>
+          <div class="signature"></div>
+        </section>
+        <section class="sponsors">
+          <img src="./assets/ipone.png" alt="" class="sponsor" />
+          <img src="./assets/mbk.png" alt="" class="sponsor" /><img
+            src="./assets/vespa.svg"
+            alt=""
+            class="sponsor"
+          /><img src="./assets/motul.png" alt="" class="sponsor" />
+          <img src="./assets/yamaha.png" alt="" class="sponsor" />
+        </section>
+      </main>
+    </div>
+    <script src="./script/pdfgenerator.js"></script>
+  </body>
+</html>

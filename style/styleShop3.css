@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
+
+.confirmer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background: #495867;
+  padding: 20px 15px;
+  border-radius: 15px;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  min-width: 300px;
+  color: white;
+}
+.confirmer .confirmer-content {
+  display: flex;
+  margin-top: 2vh;
+  gap: 15px;
+}
+.confirmer .confirmer-content button {
+  background: #fe5f55;
+  cursor: pointer;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 0.5em;
+  color: white;
+}
+.confirmer .confirmer-content button:hover {
+  opacity: 0.8;
+}
+.confirmer h5 {
+  font-size: 0.5em;
+}
+
+@media screen and (max-width: 700px) {
+  #ajt {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .addrep {
+    width: 60vw;
+    height: 70vh;
+  }
+}
+.point:hover {
+  cursor: url('../assets/wrench.png');
+}
+.point:hover {
+  cursor: url('../assets/wrench.png');
+}

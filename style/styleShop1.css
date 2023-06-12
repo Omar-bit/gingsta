@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 24px;
+  background: #495867;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background: #495867;
+  box-shadow: 0 0 5px 1px #bdd5ea;
+  text-align: center;
+  padding: 10px 0;
+}
+header h2 {
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 0 0 2px #444;
+  letter-spacing: 2px;
+}
+.main-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  gap: 5vh;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.main-container form {
+  animation: vibrate1 0.3s ease-in-out;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  background: #f7f7ff;
+  padding: 1em;
+  min-height: 80vh;
+  max-width: 95vh;
+  flex: 1.5;
+  overflow: hidden;
+}
+.main-container form img {
+  width: 60%;
+  align-self: center;
+}
+
+.main-container form h3 {
+  color: #495867;
+  font-size: 1.5em;
+  margin-bottom: 5vh;
+
+  text-shadow: 0 0px 5px #495867;
+}
+.main-container form input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #bdd5ea;
+  font-weight: bold;
+  font-size: 0.6em;
+  font-family: 'Roboto', sans-serif;
+  color: #577399;
+}
+
+.main-container form input::placeholder,
+.main-container form textarea::placeholder {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  color: #577399;
+}
+.main-container form textarea {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #bdd5ea;
+  font-size: 0.6em;
+  font-family: 'Roboto', sans-serif;
+  color: #577399;
+}
+.main-container form button {
+  width: 70%;
+  align-self: center;
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  background: #fe5f55;
+  font-size: 0.8em;
+  font-weight: bold;
+  box-shadow: 0 1px 4px -1px white;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-container .result {
+  border-radius: 10px;
+  padding: 25px 50px;
+  background: url('../assets/Blue\ Green\ Watercolor\ Linktree\ Background.png')
+    no-repeat;
+
+  background-attachment: local;
+  background-size: 100% 110%;
+
+  flex: 5;
+  overflow-y: scroll;
+  height: 80vh;
+  animation: vibrate2 0.3s reverse linear;
+}
+
+.main-container .result table td,
+.main-container .result table th {
+  color: white;
+
+  text-align: center;
+  width: 5%;
+  padding: 5px;
+  font-size: 0.85em;
+  opacity: 0.9;
+} /*
+.main-container .result table th {
+  color: wheat;
+  border: 2px solid wheat !important;
+}*/
+.main-container .result table .odd {
+  background: #577399;
+}
+.main-container .result table .even {
+  background: #495867;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.main-container .result table .expanded-column {
+  width: 1000px !important; /* Adjust the width as per your requirement */
+}
+
+input {
+  color-scheme: dark;
+}
+.supp:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 22px;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .main-container .result {
+    min-height: 50vh;
+  }
+  .main-container form {
+    flex: unset;
+    width: 100%;
+    min-height: 50vh;
+  }
+  .main-container .result {
+    width: 100%;
+    flex: unset;
+  }
+  .result::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-container form {
+    flex: 3.5;
+  }
+  .main-container .result {
+    padding: 10px 5px;
+    flex: 5;
+  }
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #0d0c0d #625b5b;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #625b5b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0d0c0d;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+@keyframes vibrate1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-15px, -0px);
+  }
+  50% {
+    transform: translate(15px, 0px);
+  }
+  75% {
+    transform: translate(-15px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes vibrate2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, -0px);
+  }
+  50% {
+    transform: translate(-15px, 0px);
+  }
+  75% {
+    transform: translate(15px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes err {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, -0px);
+  }
+  50% {
+    transform: translate(-15px, 0px);
+  }
+  75% {
+    transform: translate(15px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

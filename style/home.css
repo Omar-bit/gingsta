@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-size: 24px;
+  background: #495867;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background: #495867;
+  box-shadow: 0 0 5px 1px #bdd5ea;
+  text-align: center;
+  padding: 10px 0;
+}
+header h2 {
+  color: #bdd5ea;
+  font-size: 1.2em;
+  text-shadow: 0 0 2px #444;
+  letter-spacing: 2px;
+}
+.login-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  background: #304b69c4;
+  border-radius: 5px;
+  border: 2px solid #444;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 1em;
+}
+
+.login-form .image-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form .image-container img {
+  width: 80%;
+}
+.login-form h4 {
+  font-size: 1em;
+  color: #bdd5ea;
+}
+.login-form form {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  gap: 4vh;
+  margin-top: 2vh;
+}
+.login-form #pwd {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.login-form #pwd::placeholder {
+  font-weight: bold;
+}
+.login-form #sub {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  background: #fe5f55;
+  font-size: 0.8em;
+  font-weight: bold;
+  box-shadow: 0 1px 4px -1px white;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.login-form #sub img {
+  color: wheat;
+}
+.login-form #sub:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 700px) {
+  .login-form {
+    width: 70%;
+    margin: auto;
+    margin-top: 15vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .login-form {
+    width: 90%;
+    margin: auto;
+    margin-top: 15vh;
+  }
+}
